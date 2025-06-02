@@ -1,0 +1,114 @@
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.logo-text {
+  width: 135px;
+  height: 50px;
+}
+
+.carousel-img {
+  height: 600px;
+  width: 100px;
+  background-size: cover;
+}
+
+.carousel-md-img {
+  height: 600px;
+  width: 100px;
+  background-size: cover;
+}
+
+.popular-recipe-main-heading {
+  font-family: "Open Sans";
+}
+
+.popular-recipe-img {
+  width: 100%;
+  background-size: cover;
+}
+
+.popular-recipe-heading {
+  font-size: 30px;
+}
+
+.popular-recipe-heading-2 {
+  font-size: 23px;
+}
+
+.popular-recipe-inner-card {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.arrow-short {
+  font-size: 30px;
+}
+
+.categories-img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.categories-heading {
+  text-align: center;
+}
+
+.star {
+  font-size: 24px;
+  color: gray;
+  cursor: pointer;
+}
+
+.checked {
+  color: gold;
+}
+
+footer {
+  background-color: #f9f9f9;
+}
+
+.borderleft {
+  border-right: solid 3px rgb(84, 82, 82);
+}
+
+.footer-img {
+  width: 20%;
+}
+
+.footer-heading {
+  font-size: 20px;
+  font-family: "Open Sans";
+}
+
+.footer-name {
+  font-family: "Geneva";
+}
+
+.footer-link {
+  font-size: 13px;
+  text-align: center;
+  font-family: "Times New Roman";
+  margin-top: 4px;
+  text-decoration: none;
+}
+
+.footer-content {
+  color: #a7a8a7;
+  font-family: "Georgia";
+}
+a {
+  color: black;
+}
+
+a:hover {
+  color: #f56d15;
+  text-decoration: none;
+}
+.hover_box {
+  transition: 0.4s all ease-in-out;
+}
+.hover_box:hover {
+  transform: scale(1.05);
+}

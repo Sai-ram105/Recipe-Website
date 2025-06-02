@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <title>cookNfresh</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="#">
+              <img src="logo/cookNfresh (1).png" alt="logo" class="logo" />
+              <img
+                src="logo/cookNfresh (3).png"
+                alt="logoname"
+                class="logo-text"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav mr-auto">
+                <a class="nav-link active d-md-ml-5" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+                <a class="nav-link active" href="#categories">Categories</a>
+              </div>
+              <div class="navbar-nav ml-auto d-md-none">
+                <a class="nav-link active" href="login/login.html"
+                  >My Account <span class="sr-only">(current)</span></a
+                >
+                <a class="nav-link active" href="#">My Recipes</a>
+                <a class="nav-link active" href="#">Logout</a>
+              </div>
+              <div class="navbar-nav ml-auto d-none d-md-block">
+                <div class="dropdown dropleft">
+                  <a
+                    class=""
+                    href="#"
+                    role="img"
+                    id="dropdownMenuLink"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-user fa-lg mt-2"></i>
+                  </a>
+
+                  <div
+                    class="dropdown-menu text-left"
+                    aria-labelledby="dropdownMenuLink"
+                  >
+                    <a class="dropdown-item" href="#">My Account</a>
+                    <a class="dropdown-item" href="#">My Recipes</a>
+                    <a class="dropdown-item" href="#">Logout</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTJ8fHxlbnwwfHx8fHw%3D&w=1000&q=80"
+                  class="d-block w-100 carousel-img"
+                  alt="Cake"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Mango Cake</h5>
+                  <p>
+                    Mango cake is a tropical treat that showcases the delightful
+                    taste of ripe mangoes
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://img.freepik.com/free-photo/top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden_141793-2158.jpg?w=2000"
+                  class="d-block w-100 carousel-img"
+                  alt="pizza"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Pizza</h5>
+                  <p>
+                    A combination with creamy mushroom sauce, chunky black
+                    olives, spicy jalapeno, juicy sweet corn, mushroom and 100%
+                    mozzarella cheese with garlic sprinkle for extra flavour
+                    hit.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://c.ndtvimg.com/2022-04/fq5cs53_biryani-doubletree-by-hilton_625x300_12_April_22.jpg"
+                  class="d-block w-100 carousel-img"
+                  alt="Biryani"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Chicken Biryani</h5>
+                  <p>
+                    Traditional chicken biryani is made by layering marinated
+                    chicken at the bottom of a pot followed by another layer of
+                    par cooked rice, herbs...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleCaptions"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleCaptions"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-5">
+        <div class="col-12">
+          <h1 class="mb-3 popular-recipe-main-heading">Popular Recipes</h1>
+        </div>
+        <div class="col-12 col-md-4 mb-3">
+          <div class="shadow">
+            <img
+              src="https://falasteenifoodie.com/wp-content/uploads/2023/03/DSC08605-scaled.jpg"
+              class="popular-recipe-img"
+            />
+            <div class="popular-recipe-inner-card p-3">
+              <h1 class="d-md-none d-lg-block popular-recipe-heading mt-3">
+                Tandoori Chicken
+              </h1>
+              <h1
+                class="d-none d-md-block d-lg-none popular-recipe-heading-2 mt-0"
+              >
+                Tandoori Chicken
+              </h1>
+              <div class="d-flex flex-row justify-content-start">
+                <i class="bi bi-star" id="star"></i>
+                <i class="bi bi-star" id="star"></i>
+                <i class="bi bi-star" id="star"></i>
+                <i class="bi bi-star" id="star"></i>
+                <i class="bi bi-star" id="star"></i>
+              </div>
+              <div class="text-right">
+                <i class="bi bi-arrow-right-short arrow-short"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mb-3">
+          <div class="shadow">
+            <img
+              src="https://www.thespruceeats.com/thmb/iC0GwWxYS4kRT_DBgaLBE7Qt6SY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/papdi-chaat-recipe-1958046-hero-01-100f6f30f05a4395a5c6bfa515fc087c.jpg"
+              class="popular-recipe-img"
+            />
+            <div class="popular-recipe-inner-card p-3">
+              <h1 class="popular-recipe-heading mt-3">Papdi Chat</h1>
+              <div class="d-flex flex-row justify-content-start">
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div>
+              <div class="text-right">
+                <i class="bi bi-arrow-right-short arrow-short"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mb-3">
+          <div class="shadow">
+            <img
+              src="https://www.thespruceeats.com/thmb/W_RYo4kP9nqT4HJzBifuhbgKBjs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SES-mango-lassi-recipe-7153415-hero-01-cf39336f1a264401b2eab8750a8c7ea1.jpg"
+              class="popular-recipe-img"
+            />
+            <div class="popular-recipe-inner-card p-3">
+              <h1 class="popular-recipe-heading mt-3">Mango Lassi</h1>
+              <div class="d-flex flex-row justify-content-start">
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div>
+              <div class="text-right j">
+                <i class="bi bi-arrow-right-short arrow-short"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-4 mb-5" id="categories">
+        <div class="col-12">
+          <h1 class="popular-recipe-main-heading">Categories</h1>
+        </div>
+        <div class="col-6 col-md-3 col-xl-2">
+          <a
+            href="C:\Sai's Programs\new website\CookNFresh\categories\potato.html"
+            ><div>
+              <img
+                src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2021-04-how-to-melting-potatoes%2F2021-04-13_ATK-51219"
+                class="categories-img hover_box"
+              />
+              <h4 class="categories-heading">Potato</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3 col-xl-2">
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFcEJrbpwM6zfxy7dqQHN3eFMF-lPRkq2kawLVEr1NUCRptYMQBuutpe68U7I1GYSjJ3Q&usqp=CAU"
+              class="categories-img"
+            />
+            <h4 class="categories-heading">Dal</h4>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-xl-2">
+          <div>
+            <img
+              src="https://www.indianveggiedelight.com/wp-content/uploads/2020/03/masala-rice-new-1-featured.jpg"
+              class="categories-img"
+            />
+            <h4 class="categories-heading">Rice</h4>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-xl-2">
+          <div>
+            <img
+              src="https://www.greedygourmet.com/wp-content/uploads/2022/03/gluten-free-roti-featured-225x225.jpg"
+              class="categories-img"
+            />
+            <h4 class="categories-heading">Bread/Roti</h4>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-xl-2">
+          <div>
+            <img
+              src="https://www.funfoodfrolic.com/wp-content/uploads/2020/01/Pasta-Soup-Thumbnail-Blog.jpg"
+              class="categories-img"
+            />
+            <h4 class="categories-heading">Soup</h4>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-xl-2">
+          <div>
+            <img
+              src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/05/coconut-chutney-recipe.jpg"
+              class="categories-img"
+            />
+            <h4 class="categories-heading">Chutney</h4>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-xl-2">
+          <div>
+            <img
+              src="https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Croquembouche-profiterole-tower-ceb1da8.jpg?quality=90"
+              class="categories-img"
+            />
+            <h4 class="categories-heading">Dessert</h4>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-xl-2">
+          <div>
+            <img
+              src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FSeries%2F2021-01-tonight-we-veg-italian-chopped-salad%2FItalianChoppedSaladOption9"
+              class="categories-img"
+            />
+            <h4 class="categories-heading">Salad</h4>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-xl-2">
+          <div>
+            <img
+              src="https://tastesbetterfromscratch.com/wp-content/uploads/2019/03/Strawberry-Lemonade-8-400x400.jpg"
+              class="categories-img"
+            />
+            <h4 class="categories-heading">Drink</h4>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-xl-2">
+          <div>
+            <img
+              src="https://stordfkenticomedia.blob.core.windows.net/df-us/rms/media/recipemediafiles/recipes/retail/x17/2018_sweet-sallty-snack-mix_5817_600x600.jpg?ext=.jpg"
+              class="categories-img"
+            />
+            <h4 class="categories-heading">Snack</h4>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-xl-2">
+          <div>
+            <img
+              src="https://fabrx.co/preview/tastebite/assets/images/menus/menu91.png"
+              class="categories-img"
+            />
+            <h4 class="categories-heading">Seafood</h4>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-xl-2">
+          <div>
+            <img
+              src="https://fabrx.co/preview/tastebite/assets/images/menus/menu97.png"
+              class="categories-img"
+            />
+            <h4 class="categories-heading">Pasta</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row pt-4 mb-5 footer">
+          <div class="col-12 col-md-6">
+            <div class="d-flex flex-column">
+              <img
+                src="logo/cookNfresh__3_-removebg-preview.png"
+                class="footer-img"
+                alt="footer-logo"
+              />
+              <p class="footer-content">
+                This website gives direction for the young aspiring chefs and
+                also who wanted to try new recipes at home. We have various
+                recipes that makes your dish enhance flavours also provide
+                richess to your special made cuisine. This website features
+                various user friendly functions that make them feel at ease.
+              </p>
+            </div>
+          </div>
+          <div class="d-none d-md-inline col-md-1">
+            <hr
+              style="
+                background-color: rgb(171, 179, 175);
+                height: 80%;
+                width: 2px;
+                margin-top: 5px;
+              "
+            />
+          </div>
+
+          <div class="col-12 col-md-5">
+            <div>
+              <h3 class="footer-heading">
+                <center>Designed By..</center>
+              </h3>
+              <div class="d-flex flex-row justify-content-between">
+                <div class="d-flex flex-column">
+                  <h4 class="footer-name">Ganga Sai Ram J</h4>
+                  <div class="d-flex flex-row">
+                    <i class="bi bi-github"></i>
+                    <a href="" class="ml-1 footer-link">GitHub</a>
+                  </div>
+                  <div class="d-flex flex-row">
+                    <i class="bi bi-linkedin"></i>
+                    <a href="" class="ml-1 footer-link">LinkedIn</a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column">
+                  <h4 class="footer-name">Aprameya S</h4>
+                  <div class="d-flex flex-row">
+                    <i class="bi bi-github"></i>
+                    <a href="" class="ml-1 footer-link">GitHub</a>
+                  </div>
+                  <div class="d-flex flex-row">
+                    <i class="bi bi-linkedin"></i>
+                    <a href="" class="ml-1 footer-link">LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/356ca9cc19.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

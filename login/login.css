@@ -1,0 +1,47 @@
+.bg-container {
+    background-image: url("https://img.freepik.com/free-photo/fresh-colourful-ingredients-mexican-cuisine_23-2148254294.jpg?w=1380&t=st=1688529455~exp=1688530055~hmac=cd33d0f5e581cda6c9522323dec787eac7476612c6d2ea6b713e276c13e3ace8");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.form-bg {
+    margin-top: 10%;
+    height: 500px;
+    width: 420px;
+}
+
+.bg-trans {
+    background-color: transparent;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: white;
+}
+
+.icon {
+    font-size: 1000px;
+}
+
+.div {
+    border-radius: 1px;
+    border-style: solid;
+    border-top: red;
+    border-left: red;
+    border-right: white;
+
+}
+
+input {
+    border-color: none;
+    border-radius: 0px;
+    border-style: none;
+    background-color: transparent;
+}
+
+input:focus {
+    outline: 0px;
+}
+
+.error {
+    color: red;
+}
